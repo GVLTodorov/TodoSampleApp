@@ -1,0 +1,16 @@
+[{
+  "id": "27F541F5-3387-488D-B4DD-C7AD74C7483B",
+  "task": "Finalize presentation",
+  "status": "unfinished"
+},
+{
+  "id": "4C829434-A940-484F-BA35-D622A2AD32C3",
+  "task": "Book flights",
+  "status": "done"
+},
+{
+  "id": "ABEB5307-CC5C-432E-A104-A5BB4F312113",
+  "task": "Get cake",
+  "status": "unfinished"
+}
+]
