@@ -12,4 +12,4 @@ jobs:
     
     steps:
     - name: Start xcodebuild test
-      run: xcodebuild clean test -project TodoSampleApp.xcodeproj -scheme "TodoSampleApp" -destination "name=iPhone X,OS=12.4"
+      run: xcodebuild clean test -project TodoSampleApp/TodoSampleApp.xcodeproj -scheme "TodoSampleApp" -destination "name=iPhone X,OS=12.4"
