@@ -1,0 +1,15 @@
+name: CI
+
+on: 
+  push:
+    branches:
+      - workflows-test
+
+jobs:
+  build:
+
+    runs-on: macOS-10.14
+    
+    steps:
+    - name: Start xcodebuild test
+      run: xcodebuild clean test -project TodoSampleApp.xcodeproj -scheme "TodoSampleApp" -destination "name=iPhone X,OS=12.4"
