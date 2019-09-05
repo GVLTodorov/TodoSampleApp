@@ -11,5 +11,6 @@ jobs:
     runs-on: macOS-10.14
     
     steps:
+    - uses: actions/checkout@master
     - name: Start xcodebuild test
-      run: xcodebuild clean test -project ${HOME}/TodoSampleApp/TodoSampleApp.xcodeproj -scheme "TodoSampleApp" -destination "name=iPhone X,OS=12.4"
+      run: xcodebuild clean test -project ./TodoSampleApp.xcodeproj -scheme "TodoSampleApp" -destination "name=iPhone X,OS=12.4"
