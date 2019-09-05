@@ -13,4 +13,4 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Start xcodebuild test
-      run: xcodebuild clean test -project ./TodoSampleApp.xcodeproj -scheme "TodoSampleApp" -destination "name=iPhone X"
+      run: xcodebuild clean test -project ./TodoSampleApp.xcodeproj -scheme "TodoSampleApp" -destination "id:dvtdevice-DVTiPhonePlaceholder-iphoneos:placeholder"
