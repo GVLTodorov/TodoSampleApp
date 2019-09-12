@@ -11,6 +11,7 @@ jobs:
     runs-on: macOS-10.14
     
     steps:
-    - name: SDK version
+    - uses: actions/checkout@master
+    - name: Start xcodebuild test
       run: |
-        xcodebuild -version -sdk
+        xcodebuild test -project TodoSampleApp.xcodeproj -scheme TodoSampleApp -sdk iphonesimulator12.2 -destination "platform=iOS Simulator,name=iPhone X,OS=12.2"
