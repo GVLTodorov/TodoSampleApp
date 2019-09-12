@@ -14,4 +14,4 @@ jobs:
     - uses: actions/checkout@master
     - name: Start xcodebuild test
       run: |
-        xcodebuild test -project TodoSampleApp.xcodeproj -scheme TodoSampleApp -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone X,id=F6B65723-B90E-4C4D-9364-B627623066CC"
+        xcodebuild test -project TodoSampleApp.xcodeproj -scheme TodoSampleApp -sdk iphonesimulator -destination "platform=iOS Simulator,id=F6B65723-B90E-4C4D-9364-B627623066CC"
