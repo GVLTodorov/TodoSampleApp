@@ -13,5 +13,5 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Start xcodebuild test
-      run: xcodebuild clean test -project ./TodoSampleApp.xcodeproj -scheme "TodoSampleApp" -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 6,OS=12.2"
-
+      run: |
+        xcodebuild test -project ./TodoSampleApp.xcodeproj -scheme "TodoSampleApp" -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 6,OS=12.2"
