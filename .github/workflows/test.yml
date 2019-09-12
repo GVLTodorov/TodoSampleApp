@@ -11,7 +11,7 @@ jobs:
     runs-on: macOS-10.14
     
     steps:
-    - uses: actions/checkout@master
+    - uses: actions/checkout@workflows-test
     - name: Start xcodebuild test
       run: |
         xcodebuild test -project TodoSampleApp.xcodeproj -scheme TodoSampleApp -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 6,OS=12.2"
