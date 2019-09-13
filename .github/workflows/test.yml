@@ -12,6 +12,6 @@ jobs:
     
     steps:
     - uses: actions/checkout@master
-    - name: showsdks
+    - name: Start xcodebuild test
       run: |
-        xcodebuild -showsdks
+        xcodebuild test -project TodoSampleApp.xcodeproj -scheme TodoSampleApp -sdk iphonesimulator12.2 -destination "platform=iOS Simulator,name=iPhone 8"
