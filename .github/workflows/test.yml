@@ -12,6 +12,10 @@ jobs:
     
     steps:
     - uses: actions/checkout@master
-    - name: Start xcodebuild test
+    - name: Xcode 11 macOS
       run: |
-        xcodebuild test -project TodoSampleApp.xcodeproj -scheme TodoSampleApp -sdk iphonesimulator12.2 -destination "platform=iOS Simulator,name=iPhone 8"
+        ls -al /Applications/Xcode_11.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs
+    - name: Xcode 9.4 macOS
+      run: |
+        ls -al /Applications/Xcode_9.4.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs
+    
