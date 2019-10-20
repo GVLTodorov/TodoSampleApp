@@ -8,14 +8,10 @@ on:
 jobs:
   build:
 
-    runs-on: macOS-10.14
+    runs-on: macOS-latest
     
     steps:
     - uses: actions/checkout@master
-    - name: Xcode 11 macOS
+    - name: Start xcodebuild test
       run: |
-        ls -al /Applications/Xcode_11.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs
-    - name: Xcode 9.4 macOS
-      run: |
-        ls -al /Applications/Xcode_9.4.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs
-    
+        xcodebuild test -project TodoSampleApp.xcodeproj -scheme TodoSampleApp -destination 'platform=iOS Simulator,name=iPhone 11,OS=13.1'
